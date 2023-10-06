@@ -4,13 +4,40 @@
      padding: 0;
 }
 
+
+
+
+
+@media screen and (max-width:581px) {
+
+     nav .option-products img  {
+     
+            max-height: 200px;
+               
+          }
+
+    
+}
+
+@media screen and (max-width:395px) {
+
+     nav .option-products img {
+
+          max-height: 150px;
+
+     }
+
+
+}
+
+
 .header {
      display: flex; 
      flex-direction: row;
      align-items: center;
      justify-content: space-between;
      margin-top: 40px;
-     height: 55px;
+     height: 50px;
      
      background-color: rgb(234, 243, 243);
 }
@@ -55,12 +82,12 @@
 
      position: relative;
      left: 2rem;
-     height: 4rem;
+     height: 3.5rem;
      padding-left: 2rem;
 
 }
 
-.nav button  {
+.nav .menu-header button {
      position: absolute;
      top: 50px;
      left: 5px;
@@ -70,9 +97,103 @@
      
 }
 
+.nav {
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 25px;
+}
+
+.container-search {
+
+    
+     
+     display: flex;
+     width: 100%;
+     padding: 0px 15px 0 15px
+  
+}
+
+.container-search input {
+
+        
+          background-color: white;
+          border: 2px solid black;
+          padding-left: 10px;
+          width: 90%;
+          height: 45px;
+          border-radius: 5px 0 0 5px ;
+          font-size: 1em;
+
+}
+
+.container-search input::placeholder {
+
+     color: rgba(128, 128, 128, 0.514);
+}
+
+.container-search button{
+
+     color: rgb(249, 251, 252);
+     background-color: black;
+     border: 1px solid black;
+     padding: 6px;
+     width: 45px;
+     height: 45px;
+     border-radius: 0 5px 5px 0;
+     font-size: 10px;
+     
+}
+
 .main {
 
      background-color: aqua;
+
+
+
+}
+
+section .promocion {
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+    
+
+}
+
+
+
+.promocion .img-promo img {
+
+     
+     width: 100%;
+     padding: 5em 1em 0 1em;
+}
+
+nav .option-products {
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 5px;
+     margin-bottom: 50px;
+}
+
+nav .option-products li {
+
+     list-style: none;
+}
+
+nav .option-products img {
+
+    
+    max-width: 280px;
+     width: 100%;
+     padding: 1em;
 }
 
 .footer {
