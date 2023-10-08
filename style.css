@@ -1,10 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Open+Sans&family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
 * {
      box-sizing: border-box;
      margin: 0;
      padding: 0;
 }
 
+:root {
+     --blanco:#fffafa;
+     --negro: #181818;
+     --gris: #f7f2f2;
+     --gris-oscuro: #918989;
+     --titulo:'Montserrat', sans-serif;
+     --titulo-decorativo:'Dancing Script',cursive;
+     --texto:'Open Sans', sans-serif;
+}
 
+body {
+
+     font-family: var(--texto);
+}
+
+h2 {
+
+     font-family: var(--titulo);
+     font-size: 1.5em; 
+     font-weight: 200;
+   
+}
+
+h3 {
+
+     font-family: var(--texto);
+     font-size: 15px;
+     font-weight: bold;
+}
+
+p {
+
+     font-family: var(--texto);
+     font-size: 13px;
+     font-weight: lighter;
+}
+
+.products-deco {
+     
+     font-size: 4em;
+     font-family: var(--titulo-decorativo);
+     font-weight: 100;
+     color: var(--gris-oscuro);
+}
+
+.opcion-products-titulo {
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 1em;
+     padding: 1em;
+     flex-wrap: wrap;
+     margin-left: 1em;
+     
+}
 
 
 
@@ -16,6 +76,8 @@
                
           }
 
+        
+                  
     
 }
 
@@ -28,59 +90,164 @@
      }
 
 
+
 }
 
+
+
+@media screen and (max-width:1000px) {
+
+     .container-search {
+     
+     
+     position: absolute;
+                    
+          }
+
+    .option-header-home {
+     
+               opacity: 0;
+          
+          }
+     
+
+     }  
+ @media screen and (min-width:720px) {
+
+     .opcion-products-titulo {
+
+          justify-content: left;
+     }
+ }
+@media screen and (min-width:1000px) {
+
+     .nav .menu-header button {
+
+          display: none;
+     }
+
+     .header {
+               
+       background-color: var(--blanco);
+       
+     }
+     
+
+}
+
+  .option-header-home {
+       
+       display: flex;
+       padding: 2px;
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-between;
+       width: 100%;
+       background-color:var(--negro);
+       position: absolute;
+       top: 105px;
+       
+  }
+ .option-header-home .nav-home {
+
+    margin-left: 6rem;
+   
+       
+ }
+
+ .option-header-home .nav-home button {
+
+     margin: 5px;
+     border: none;
+ }
+ .option-header-home  a {
+     font-family: var(--texto);  
+     font-size: 19px;
+     color: var(--blanco);
+     font-weight: 800 ;
+    
+     
+ }
+
+ .option-header-home i {
+
+     
+      color: var(--blanco);
+      background-color: var(--negro);
+
+ }
+
+ .option-header-home-contact {
+
+     display: flex;
+
+ }
+
+ .option-header-home-contact a {
+
+     font-weight: 200;
+ }
+
+ .ofertas a {
+
+     margin-right: 3rem;
+     text-transform: uppercase;
+     
+
+     
+ }
 
 .header {
      display: flex; 
      flex-direction: row;
+     flex-wrap: nowrap;
      align-items: center;
-     justify-content: space-between;
+     justify-content: center;
      margin-top: 40px;
      height: 50px;
      
-     background-color: rgb(234, 243, 243);
+     background-color: var(--gris);
 }
 
-.nav button i{
+ button i{
 
    font-size: 2em;
+   
+
 }
 
-.option-header {
-
+nav .option-header {
      display: flex;
-     justify-content: end;
+     position: absolute;
+     top: 50px;
+     right: 10px;  
 }
 
-.option-header ul {
+
+
+ ul {
 
      list-style: none;
-     display: flex;
-     flex-direction: row;
      gap: 25px;
-     padding-right: 25px;
-   
           
 }
 
-.option-header li {
-
+li , a {
+    
      text-decoration: none;
-
-     
+     color: var(--negro);
 }
 
 .option-header li a {
 
-     color: black;
      font-size: 2em;
      
 }
 
 .header img {
 
-     position: relative;
+     position: absolute;
+     top: 34px;
      left: 2rem;
      height: 3.5rem;
      padding-left: 2rem;
@@ -93,15 +260,16 @@
      left: 5px;
      border: none;
      padding-left: 5px;
+     background-color: var(--gris);
 
-     
+     font-weight: 100;
 }
 
 .nav {
 
      display: flex;
      align-items: center;
-     justify-content: center;
+     
      margin-top: 25px;
 }
 
@@ -110,16 +278,24 @@
     
      
      display: flex;
+     justify-content: center;
+    
      width: 100%;
-     padding: 0px 15px 0 15px
-  
+     max-width: 550px;
+     padding: 0 1em;
+     
+     top: 105px;
+     .promocion2 img {
+     
+               max-height: 200px;
+          }
 }
 
 .container-search input {
 
         
-          background-color: white;
-          border: 2px solid black;
+          background-color: var(--blanco);
+          border: 2px solid var(--negro);
           padding-left: 10px;
           width: 90%;
           height: 45px;
@@ -135,9 +311,9 @@
 
 .container-search button{
 
-     color: rgb(249, 251, 252);
-     background-color: black;
-     border: 1px solid black;
+     color: var(--blanco);
+     background-color:var(--negro);
+     border: 1px solid var(--negro);
      padding: 6px;
      width: 45px;
      height: 45px;
@@ -146,15 +322,8 @@
      
 }
 
-.main {
 
-     background-color: aqua;
-
-
-
-}
-
-section .promocion {
+.promocion {
 
      display: flex;
      align-items: center;
@@ -170,10 +339,10 @@ section .promocion {
 
      
      width: 100%;
-     padding: 5em 1em 0 1em;
+     padding: 8em 1em 0 1em;
 }
 
-nav .option-products {
+.option-products {
 
      display: flex;
      align-items: center;
@@ -183,17 +352,64 @@ nav .option-products {
      margin-bottom: 50px;
 }
 
-nav .option-products li {
+.option-products li {
 
      list-style: none;
 }
 
-nav .option-products img {
+.option-products img {
 
     
     max-width: 280px;
      width: 100%;
      padding: 1em;
+}
+
+.promocion2 .img-promo {
+
+     display: flex;
+     width: 100%;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 5px;
+}
+
+.promocion2 .img-promo img {
+
+     max-width: 360px;
+     width: 100%;
+     padding: 0em 1em 0 1em;
+     
+
+}
+
+.opcion-products img {
+
+
+     max-width: 280px;
+     width: 100%;
+     padding: 1em;
+}
+
+.opcion-products-article {
+
+     max-width: 260px;
+     max-height: 400px;
+     width: 100%;
+     overflow: hidden;
+     padding: 1em;
+     
+}
+
+.articles  {
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+    
+     width: 100%;
 }
 
 .footer {
