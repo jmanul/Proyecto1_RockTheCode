@@ -14,6 +14,7 @@
      --negro: #181818;
      --gris: #f7f2f2;
      --gris-oscuro: #918989;
+     --gris-transparente:rgba(128, 128, 128, 0.144);
      --titulo:'Montserrat', sans-serif;
      --titulo-decorativo:'Dancing Script',cursive;
      --texto:'Open Sans', sans-serif;
@@ -63,77 +64,13 @@ p {
      padding: 1em;
      flex-wrap: wrap;
      margin-left: 1em;
+     margin-top: 4em;
      
 }
 
 
 
-@media screen and (max-width:581px) {
 
-     nav .option-products img  {
-     
-            max-height: 200px;
-               
-          }
-
-        
-                  
-    
-}
-
-@media screen and (max-width:395px) {
-
-     nav .option-products img {
-
-          max-height: 150px;
-
-     }
-
-
-
-}
-
-
-
-@media screen and (max-width:1000px) {
-
-     .container-search {
-     
-     
-     position: absolute;
-                    
-          }
-
-    .option-header-home {
-     
-               opacity: 0;
-          
-          }
-     
-
-     }  
- @media screen and (min-width:720px) {
-
-     .opcion-products-titulo {
-
-          justify-content: left;
-     }
- }
-@media screen and (min-width:1000px) {
-
-     .nav .menu-header button {
-
-          display: none;
-     }
-
-     .header {
-               
-       background-color: var(--blanco);
-       
-     }
-     
-
-}
 
   .option-header-home {
        
@@ -150,7 +87,8 @@ p {
   }
  .option-header-home .nav-home {
 
-    margin-left: 6rem;
+  
+     margin-left: 6rem;
    
        
  }
@@ -387,32 +325,144 @@ li , a {
 .opcion-products img {
 
 
-     max-width: 280px;
-     width: 100%;
+     width: 180px;
+   
      padding: 1em;
 }
 
 .opcion-products-article {
 
-     max-width: 260px;
-     max-height: 400px;
-     width: 100%;
-     overflow: hidden;
-     padding: 1em;
+     flex: 0 0 auto;
+     width: 220px;
+     height: 100%;
+     padding: .4em;
      
+}
+
+.opcion-products-article:hover {
+
+     border: .4px solid var(--gris-transparente);
+   
+
 }
 
 .articles  {
 
      display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-wrap: wrap;
+     flex-wrap: nowrap;
+     overflow-x: hidden;
+     margin: 1em 4em;
+     justify-content:start;
+
     
-     width: 100%;
+   
+}
+
+.opcion-products-article::after {
+
+     content: "⭐ ⭐ ⭐ ⭐ ⭐ ";
+     display: block;
+     margin-top: 1em;
+}
+
+
+.cuore {
+
+     display: flex;
+     align-items: top;
+     justify-content: space-between;
+}
+
+.cuore i {
+
+     font-size: 1.5em;
+     font-weight: bolder;
 }
 
 .footer {
 
      background-color: blueviolet;
+}
+
+@media screen and (max-width:581px) {
+
+     .option-products img {
+
+          max-height: 200px;
+
+     }
+
+
+
+}
+
+@media screen and (max-width:395px) {
+
+     .option-products img {
+
+          max-height: 150px;
+
+     }
+
+
+
+}
+
+
+
+@media screen and (max-width:1000px) {
+
+     .container-search {
+
+
+          position: absolute;
+
+     }
+
+     .option-header-home {
+
+          opacity: 0;
+
+     }
+
+   
+
+
+}
+
+@media screen and (min-width:720px) {
+
+     .opcion-products-titulo {
+
+          justify-content: left;
+     }
+
+            .promocion2 .img-promo img {
+     
+                 max-width: 460px;
+            }
+}
+
+@media screen and (min-width:1300px) {
+
+     .articles {
+
+          justify-content: center;
+     }
+}
+
+@media screen and (min-width:1000px) {
+
+     .nav .menu-header button {
+
+          display: none;
+     }
+
+     .header {
+
+          background-color: var(--blanco);
+
+     }
+
+
 }
