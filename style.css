@@ -7,6 +7,7 @@
      box-sizing: border-box;
      margin: 0;
      padding: 0;
+     
 
 }
 
@@ -24,8 +25,8 @@
 body {
 
      font-family: var(--texto);
-     width: 100%;
-     min-height: 100vh;
+     width: 100wh;
+     height: 100vh;
 }
 
 h2 {
@@ -342,6 +343,7 @@ li , a {
      height: 100%;
      padding: .4em;
     
+    
      
 }
 
@@ -350,7 +352,7 @@ li , a {
 .opcion-products-article:hover {
 
      border: .4px solid var(--gris-transparente);
-   
+     
 
 }
 
@@ -365,10 +367,10 @@ li , a {
     
    
 }
-
+/* intentar mejorar esta parte */
 .articles:hover {
 
-     overflow: auto;  
+   overflow: auto;
 
 }
 
@@ -382,6 +384,7 @@ li , a {
      display: block;
      margin-top: 1em;
      font-size: 17px;
+ 
      
 }
 
@@ -406,6 +409,7 @@ li , a {
 .precios {
 
      margin-top: 1em;
+     width: max-content;
 }
 
 .precio {
@@ -439,11 +443,40 @@ li , a {
      font-weight: 300;
 }
 
+#vendidos .cuore i{
+
+     display: none;
+}
+#sin-descuento span {
+
+     display: none;
+}
+
+.presentacion {
+
+     background-color: var(--gris);
+     margin: 0 6em ;
+     padding: 2em 4em 2em 1.5em;
+     text-align: start;
+     font-size: 14px;
+     font-family: var(--texto);
+
+
+}
+
+.presentacion .icon {
+
+     font-size: 20px;
+     padding: 0 15px ;
+}
+
 
 .footer {
 
      background-color: blueviolet;
 }
+
+
 
 @media screen and (max-width:581px) {
 
@@ -486,10 +519,10 @@ li , a {
 
      }
 
-   
-
-
 }
+
+
+
 
 @media screen and (min-width:720px) {
 
@@ -510,6 +543,16 @@ li , a {
 
           justify-content: center;
      }
+
+     /* intentar mejorar esta parte */
+
+          .opcion-products-titulo {
+     
+               margin-left: 10em;
+     
+     
+     
+          }
 }
 
 @media screen and (min-width:1000px) {
