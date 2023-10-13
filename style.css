@@ -214,6 +214,7 @@ nav .option-header {
      
      top: 105px;
  
+ 
 }
 
 .container-search input {
@@ -551,7 +552,7 @@ nav .option-header {
 
 .footer {
 
-     background-color: blueviolet;
+     background-color: rgb(37, 37, 37);
 }
 
 .contact {
@@ -565,6 +566,7 @@ nav .option-header {
 .contact i {
 
      font-size: 4rem;
+     color: var(--negro);
 }
 
 .contact .envios {
@@ -576,7 +578,183 @@ nav .option-header {
      padding: 1em 0;
 }
 
+.suscripcion {
 
+     color: var(--blanco);
+     text-align: center;
+     padding: 2em 2em;
+}
+.suscripcion h2 {
+
+     color: var(--blanco);
+   
+}
+
+.suscripcion label input {
+         
+     margin-right: 5px;
+     
+   
+     
+}
+
+.suscribete {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;  
+  width: 100%;
+   
+}
+
+.suscribete  button {
+
+     color: var(--blanco);
+     background-color: var(--negro);
+     font-size: 18px;
+     padding: 10px 20px;
+     border: solid 1px var(--blanco);
+     height: 45px;
+     
+}
+
+.suscribete input {
+
+     background-color:var(--blanco);
+     width: 70%;
+     max-width: 600px;
+     font-size: 16px;
+     padding: 12px 20px;
+     border: solid 1px var(--blanco);
+     height: 45px;
+     
+}
+
+.suscripcion form input::placeholder {
+
+     color: var(--gris-transparente);
+}
+
+.aviso {
+
+     padding-top: 20px;
+}
+
+
+.info {
+
+     font-size: 17px;
+     font-weight: 600;
+     padding: 2em 4em 1em;
+
+     color: var(--gris-oscuro);
+}
+
+.info .su_cuenta , .tienda {
+
+     padding-bottom: 2em;
+}
+
+.info-home {
+     
+     font-size: 17px;
+     font-weight: 600;
+     color: var(--gris-oscuro);
+     display: flex;
+     justify-content: center;
+     margin: 1em 5em;
+     gap: 3em;
+
+
+}
+
+.titulo-footer {
+
+     padding-bottom: 20px;
+}
+
+.info-home ul {
+
+     width: 240px;
+}
+
+.info-home li  {
+
+     color: var(--blanco);
+     margin-bottom: 10px;
+     font-size: 15px;
+}
+
+.info-home i {
+
+     color: var(--blanco);
+     margin-bottom: 10px;
+     font-size: 15px;
+}
+
+
+
+.info-home i {
+
+     margin-right: 5px;
+}
+
+
+.rrss {
+
+     text-align: center;
+     font-size: 15px;
+     font-weight: 600;
+     color: var(--gris-oscuro);
+     margin-top: 1em;
+     
+}
+
+.rrss .rrss {
+
+     display: flex;
+     justify-content: center ;
+     gap: 3em;
+  
+}
+
+.rrss i {
+
+     font-size: 2em;
+     color: var(--blanco);
+}
+
+
+
+
+.making {
+
+     color: var(--blanco);
+     text-align: center;
+     padding: 3em 0 2em 0;
+     font-size: 13px;
+}
+
+.metodos-pago .bizum{
+
+     width: 96px;
+     height: 58px;
+    
+     border-radius: 5px;
+     background-color: var(--blanco);
+}
+.metodos-pago ul {
+
+     display: flex;
+     justify-content: center;
+     margin-top: 5em;
+
+}
+.making span {
+
+     font-size: 1.5em;
+}
 
 @media screen and (max-width:581px) {
 
@@ -602,6 +780,18 @@ nav .option-header {
 
 }
 
+@media screen and (max-width:800px) {
+
+     .metodos-pago ul {
+     
+               display: none;
+     
+     
+          }
+
+
+}
+
 
 
 @media screen and (max-width:1000px) {
@@ -615,11 +805,19 @@ nav .option-header {
 
      .option-header-home {
 
-          opacity: 0;
+          display: none;
           overflow: hidden;
 
 
      }
+     
+
+           .info-home {
+     
+                display: none;
+           }
+
+        
 
 }
 
@@ -690,6 +888,11 @@ nav .option-header {
           background-color: var(--blanco);
 
      }
+     
+     .info {
+     
+                display: none;
+           }
 
 
 .mas-frecuentes ul {
@@ -708,6 +911,35 @@ nav .option-header {
      width: 25%;
    
 }
+
+.pie-footer {
+
+     display: grid;
+     align-items: center;
+     justify-content: center;
+     grid-column: 1fr 1fr;
+     grid-template-areas: 
+     "making metodos-pago";
+     
+
+}
+
+.metodos-pago {
+
+
+
+     grid-area: metodos-pago;
+     padding-bottom: 3em;
+  
+}
+
+
+.making {
+
+     grid-area: making;
+     margin-right: 10em;
+}
+
 
 
 }
