@@ -12,11 +12,14 @@
 }
 
 :root {
+     --botones:#e0dddd;
      --blanco:#fffafa;
      --negro: #181818;
      --gris: #f7f2f2;
      --gris-oscuro: #918989;
-     --gris-transparente:rgba(128, 128, 128, 0.144);
+     --gris-transparente:#80808067;
+     --rojo:#e94e5b;
+     --gris-texto:#f2f3eb;
      --titulo:'Montserrat', sans-serif;
      --titulo-decorativo:'Dancing Script',cursive;
      --texto:'Open Sans', sans-serif;
@@ -25,7 +28,7 @@
 body {
 
      font-family: var(--texto);
-     width: 100wh;
+     width: 100%;
      height: 100vh;
 }
 
@@ -49,30 +52,15 @@ h3 {
 p {
 
      font-family: var(--texto);
-     font-size: 13px;
-     font-weight: lighter;
+    
 }
 
-.products-deco {
-     
-     font-size: 4em;
-     font-family: var(--titulo-decorativo);
-     font-weight: 100;
-     color: var(--gris-oscuro);
+li , a {
+    
+     text-decoration: none;
+     color: var(--negro);
 }
 
-.opcion-products-titulo {
-
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: 1em;
-     padding: 1em;
-     flex-wrap: wrap;
-     margin-left: 1em;
-     margin-top: 4em;
-     
-}
 
 
 
@@ -163,7 +151,7 @@ p {
 nav .option-header {
      display: flex;
      position: absolute;
-     top: 50px;
+     top: 45px;
      right: 10px;  
 }
 
@@ -176,11 +164,7 @@ nav .option-header {
           
 }
 
-li , a {
-    
-     text-decoration: none;
-     color: var(--negro);
-}
+
 
 .option-header li a {
 
@@ -229,10 +213,7 @@ li , a {
      padding: 0 1em;
      
      top: 105px;
-     .promocion2 img {
-     
-               max-height: 200px;
-          }
+ 
 }
 
 .container-search input {
@@ -250,7 +231,7 @@ li , a {
 
 .container-search input::placeholder {
 
-     color: rgba(128, 128, 128, 0.514);
+     color: var(--gris-transparente);
 }
 
 .container-search button{
@@ -328,6 +309,27 @@ li , a {
 
 }
 
+.products-deco {
+
+     font-size: 4em;
+     font-family: var(--titulo-decorativo);
+     font-weight: 100;
+     color: var(--gris-oscuro);
+}
+
+.opcion-products-titulo {
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 1em;
+     padding: 1em;
+     flex-wrap: wrap;
+     margin-left: 1em;
+     margin-top: 4em;
+
+}
+
 .opcion-products img {
 
 
@@ -342,6 +344,7 @@ li , a {
      width: 180px;
      height: 100%;
      padding: .4em;
+     font-size: 13px ;
     
     
      
@@ -367,7 +370,7 @@ li , a {
     
    
 }
-/* intentar mejorar esta parte */
+
 .articles:hover {
 
    overflow: auto;
@@ -422,7 +425,7 @@ li , a {
 
      font-size: 10px;
      font-weight: 100;
-     color: rgb(95, 93, 93);
+     color: var(--gris-oscuro);
      text-decoration: line-through;
 }
 
@@ -430,7 +433,7 @@ li , a {
 
      font-size: 10px;
      color: var(--blanco);
-     background-color: rgb(233, 78, 91);
+     background-color:var(--rojo);
      padding: 5px 7px;
      border-radius: 10px;
      margin-left: 10px;
@@ -452,28 +455,125 @@ li , a {
      display: none;
 }
 
-.presentacion {
+.texto {
 
-     background-color: var(--gris);
+     background-color: var(--gris-texto);
      margin: 0 6em ;
+     font-size: 14px;
      padding: 2em 4em 2em 1.5em;
      text-align: start;
-     font-size: 14px;
-     font-family: var(--texto);
+     
 
 
 }
 
-.presentacion .icon {
+
+
+.icon {
 
      font-size: 20px;
      padding: 0 15px ;
+}
+
+.oils {
+
+     font-size: 23px;
+     text-align: center;
+}
+
+.titular {
+
+     text-align: center;
+     padding: 1em;
+     font-size: 15px;
+}
+
+.mas-frecuentes {
+
+     padding:0 6em ;
+}
+
+.mas-frecuentes ul{
+
+     display: flex;
+
+     overflow-x: hidden;
+     text-align: center;
+     padding: 1em ;
+   
+
+}
+
+.mas-frecuentes ul:hover {
+
+     overflow-x: auto;
+}
+
+
+.mas-frecuentes li {
+
+     flex: 0 0 auto;
+     width: max-content;
+     padding: 5px 30px;
+     border-radius: 5px;
+     box-shadow: 0 1px 0 0 rgb(196, 194, 194) ;
+     background-color: var(--botones);
+     
+}
+
+.mas-frecuentes a {
+
+     color: var(--gris-oscuro);
+     font-size: 17px;
+}
+
+.mas-frecuentes a:hover {
+
+     color: var(--blanco);
+}
+
+.carta {
+
+     padding: 60px 120px;
+     text-align: left;
+}
+
+.carta h3 {
+    
+     font-size: 22px;
+}
+
+.carta h4 {
+
+     font-size: 20px;
 }
 
 
 .footer {
 
      background-color: blueviolet;
+}
+
+.contact {
+
+     background-color: var(--gris-texto);
+     display: flex;
+     flex-wrap: wrap;
+    
+
+}
+.contact i {
+
+     font-size: 4rem;
+}
+
+.contact .envios {
+
+     text-align: center;
+    
+     width: 50%;
+     height: max-content;
+     padding: 1em 0;
 }
 
 
@@ -516,9 +616,27 @@ li , a {
      .option-header-home {
 
           opacity: 0;
+          overflow: hidden;
+
 
      }
 
+}
+
+@media screen and (max-width:400px) {
+
+     .header img {
+     
+            
+               height: 3rem;        
+ 
+          }
+
+          .option-header li a {
+
+     font-size: 1.5em;
+     
+}
 }
 
 
@@ -548,8 +666,13 @@ li , a {
 
           .opcion-products-titulo {
      
-               margin-left: 10em;
-     
+            
+               justify-content: center;
+          
+               margin-right: 40em;
+              
+            
+              
      
      
           }
@@ -567,6 +690,24 @@ li , a {
           background-color: var(--blanco);
 
      }
+
+
+.mas-frecuentes ul {
+
+        
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2em;
+    
+
+
+}
+
+.contact .envios {
+
+     width: 25%;
+   
+}
 
 
 }
