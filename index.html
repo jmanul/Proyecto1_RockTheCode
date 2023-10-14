@@ -11,6 +11,8 @@
 
 <body>
 
+     <!-- barra superior header -->
+
      <header class="header">
 
           <div class="logo"><a href="http://127.0.0.1:5501/index.html"><img class="logo-icon"
@@ -30,38 +32,48 @@
                </div>
           </nav>
 
+          <!-- barra de busqueda -->
+
           <div class="container-search">
                <input type="text" name="container-search" id="container-search" placeholder="Búsqueda en catálogo">
                <button class="search"><i class="bi bi-search"></i></button>
           </div>
 
+          <!-- menu header para pantallas a partir de 1000px -->
+
           <nav class="option-header-home">
                <nav class="nav-home">
-                    <div class="menu-header-home"><button class="menu-header-home"><i
-                                   class="bi bi-list fa-5x"></i></button>
-                         <a href="#">Tienda</a>
+                  
+                         <a href="#"><i class="bi bi-list fa-5x"></i>Tienda</a>
                     </div>
                </nav>
 
                <ul class="option-header-home-contact">
                     <li><a href="#">Contacta con nosotros</a></li>
-                    <li><a href="#">|</a></li>
+                    <li><p>|</p></li>
                     <li><a href="#">Quiénes somos</a></li>
                </ul>
                <div class="ofertas"><a href="#">ofertas y promos</a></div>
           </nav>
 
      </header>
+
+
      <main class="main">
 
+    <!-- espacio par imagenes promocionales -->
 
           <section class="promocion">
 
                <picture class="img-promo">
                     <source media="(min-width:720px)" srcset="/assets/icon-cure-promo-home.jpg.webp">
-                    <img src="/assets/icon-cure-promo-movil.jpg.webp" alt="promocion">
+                    <img class="alterna" src="/assets/icon-cure-promo-movil.jpg.webp" alt="promocion">
+                    
                </picture>
+
           </section>
+
+          <!-- enlaces a distintas lineas de productos -->
 
           <section class="option-products">
                <ul class="option-products">
@@ -80,6 +92,8 @@
                </ul>
           </section>
 
+          <!-- espacio para dos imagenes promocionales juntas o una dependiendo del tamaño de pantalla -->
+
           <section class="promocion2">
 
                <picture class="img-promo">
@@ -87,6 +101,8 @@
                     <img src="/assets/promo-cepillo-gratis_02.jpg" alt="promocion">
                </picture>
           </section>
+
+          <!-- espacio para productos favoritos -->
 
           <section class="opcion-products">
                <div class="opcion-products-titulo">
@@ -208,6 +224,8 @@
                     </article>
                </div>
           </section>
+
+          <!-- espacio para productos mas vendidos -->
          
           <section class="opcion-products">
                <div class="opcion-products-titulo">
@@ -322,6 +340,8 @@
                </div>
           </section>
 
+          <!-- imagen promocional -->
+
           <section class="promocion">
           
                <picture class="img-promo">
@@ -329,6 +349,8 @@
                     <img src="/assets/como-es-tu-cabello.webp" alt="promocion">
                </picture>
           </section>
+
+          <!-- enlaces a productos capilares por categorias -->
 
 
           <section class="option-products">
@@ -354,6 +376,9 @@
                                    alt="sensible"></a></li>
                </ul>
           </section>
+
+          <!-- presentacion -->
+
           <section class="texto">
           <p class="presentacion">En <strong>ICON Tienda Online</strong> somos muy conscientes de la importancia que tiene cuidar el cabello. A lo largo de los últimos 25
           años que hemos estado trabajando con la marca I.C.O.N hemos tenido la oportunidad de tratar y cuidar miles de cabellos
@@ -366,7 +391,7 @@
           especial.</p>
           </section>
 
-<!-- section cuidamos tu piel -->
+     <!-- imagenes promocionales -->
 
           <section class="promocion">
           
@@ -375,6 +400,8 @@
                     <img src="/assets/Sublime-oils-piel-luminosa-y-suave.webp" alt="promocion">
                </picture>
           </section>
+
+          <!-- linea de productos para la piel -->
 
            <section class="opcion-products">
           
@@ -495,6 +522,9 @@
                <p><br><strong>Sublime Oils</strong> es una marca de cosmética 100% orgánica, ecológica y natural ideal para todo tipo de pieles. Combina los
                aceites esenciales más naturales extraídos de plantas exóticas cultivadas de forma sostenible.</p>
           </section>
+
+          <!-- imagenes promocinales -->
+
           <section class="promocion">
           
                <picture class="img-promo">
@@ -502,6 +532,9 @@
                     <img src="/assets/define-tu-look.webp" alt="promocion">
                </picture>
           </section>
+
+          <!-- enlaces a lineas de productos -->
+
           <section class="option-products">
                <ul class="option-products">
                   
@@ -521,6 +554,8 @@
                </ul>
           </section>
 
+          <!-- enlaces de interes -->
+
           <section class="busquedas-frecuentes">
                <div class="titular">
                <h2>Nuestros clientes buscan frecuentemente</h2>
@@ -528,16 +563,18 @@
                <div class="mas-frecuentes">
                <ul class="busquedas">
           
-                    <li><a href="https://icontiendaonlined2.es/icon-india/">I.C.O.N INDIA</a></li>
-                    <li><a href="https://icontiendaonlined2.es/champus-icon-para-todo-tipo-de-cabellos/">Champús I.C.O.N</a></li>
-                    <li><a href="https://icontiendaonlined2.es/acondicionadores-icon/">Acondicionadores I.C.O.N</a></li>
-                    <li><a href="https://icontiendaonlined2.es/icon-tratamientos-para-el-cabello/">Tratamientos I.C.O.N</a></li>
-                    <li><a href="https://icontiendaonlined2.es/color/">COLOR</a></li>
-                    <li><a href="https://icontiendaonlined2.es/icon-natural-earth-colors/">Natural Earth Colors</a></li>
-                    <li><a href="https://icontiendaonlined2.es/icon-pure-light-matizador-violeta/">I.C.O.N PURE LIGHT</a></li>
+                    <li><a href="https://icontiendaonlined2.es/icon-india/" target="_blank" rel="noopener noreferrer">I.C.O.N INDIA</a></li>
+                    <li><a href="https://icontiendaonlined2.es/champus-icon-para-todo-tipo-de-cabellos/" target="_blank" rel="noopener noreferrer">Champús I.C.O.N</a></li>
+                    <li><a href="https://icontiendaonlined2.es/acondicionadores-icon/" target="_blank" rel="noopener noreferrer">Acondicionadores I.C.O.N</a></li>
+                    <li><a href="https://icontiendaonlined2.es/icon-tratamientos-para-el-cabello/" target="_blank" rel="noopener noreferrer">Tratamientos I.C.O.N</a></li>
+                    <li><a href="https://icontiendaonlined2.es/color/" target="_blank" rel="noopener noreferrer">COLOR</a></li>
+                    <li><a href="https://icontiendaonlined2.es/icon-natural-earth-colors/" target="_blank" rel="noopener noreferrer">Natural Earth Colors</a></li>
+                    <li><a href="https://icontiendaonlined2.es/icon-pure-light-matizador-violeta/" target="_blank" rel="noopener noreferrer">I.C.O.N PURE LIGHT</a></li>
                </ul>
                </div>
           </section>
+
+          <!-- texto descriptivo -->
 
           <section class="carta">
 
@@ -572,6 +609,9 @@
           </section>      
 
      </main>
+
+     <!-- footer superior informativo -->
+
      <footer class="footer">
           <section class="contact">
                <div class="envios"><i class="bi bi-truck"></i><p><strong>envios gratis 24h</strong></p><p>pedidos antes de las 16:00</p></div>
@@ -580,6 +620,8 @@
                <div class="envios"><i class="bi bi-telephone"></i><p><strong>Pedidos por teléfono</strong></p><p>622 387 199</p></div>
                <div class="envios"><i class="bi bi-headset"></i><p><strong>Asesoramiento gratuito</strong></p><p>625 676 769</p></div>
           </section>
+
+          <!-- espacio para suscripcion a ofertas-->
           <section class="suscripcion">
            <h2>Suscríbete a las mejores ofertas
 </h2>
@@ -598,11 +640,16 @@
      <p>Puede darte de baja en cualquier momento. Consulta nuestro aviso legal.</p>
      </div>
           </section>
+      
+          <!--menu footer simplificado  -->
+
      <section class="info">
           <section class="su_cuenta">Su cuenta</section>
           <section class="tienda">I.C.O.N Tienda Online D2</section>
           <section class="informacion">Informacion de la tienda</section>
      </section>
+
+     <!-- menu footer extendido para pantallas grandes -->
 
      <section class="info-home">
           <section class="su_cuenta">
@@ -648,6 +695,8 @@
           </section>
      </section>
 
+     <!-- espacio para redes sociales -->
+
 
           <div class="rrss">¡Siguenos en redes sociales!
                <ul class="rrss">
@@ -655,6 +704,7 @@
                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
           </ul> </div>
 
+       <!-- pie de footer -->
 
      <div class="pie-footer">
 

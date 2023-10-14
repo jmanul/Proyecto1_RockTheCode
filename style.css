@@ -61,15 +61,35 @@ li , a {
      color: var(--negro);
 }
 
+button i {
+
+     font-size: 2em;
+
+
+}
+
+nav .option-header {
+     display: flex;
+     position: absolute;
+     top: 45px;
+     right: 10px;
+}
 
 
 
+ul {
 
+     list-style: none;
+     gap: 25px;
+
+}
+
+/* header */
 
   .option-header-home {
        
        display: flex;
-       padding: 2px;
+       padding: 9px;
        flex-direction: row;
        align-items: center;
        justify-content: space-between;
@@ -87,25 +107,36 @@ li , a {
        
  }
 
- .option-header-home .nav-home button {
+ .option-header-home  a:hover {
 
-     margin: 5px;
-     border: none;
+     color: var(--gris-oscuro);
  }
+
+
  .option-header-home  a {
      font-family: var(--texto);  
      font-size: 19px;
      color: var(--blanco);
      font-weight: 800 ;
+     
     
      
  }
+ .option-header-home p {
+      
+      font-size: 19px;
+      color: var(--blanco);
+      font-weight: 800;
 
+
+
+ }
  .option-header-home i {
 
-     
+      padding-right: 5px;
       color: var(--blanco);
       background-color: var(--negro);
+      
 
  }
 
@@ -141,28 +172,6 @@ li , a {
      background-color: var(--gris);
 }
 
- button i{
-
-   font-size: 2em;
-   
-
-}
-
-nav .option-header {
-     display: flex;
-     position: absolute;
-     top: 45px;
-     right: 10px;  
-}
-
-
-
- ul {
-
-     list-style: none;
-     gap: 25px;
-          
-}
 
 
 
@@ -200,6 +209,8 @@ nav .option-header {
      
      margin-top: 25px;
 }
+
+/* barra de busquedas */
 
 .container-search {
 
@@ -249,6 +260,10 @@ nav .option-header {
 }
 
 
+/* main */
+
+/* imagen promocional  */
+
 .promocion {
 
      display: flex;
@@ -267,6 +282,9 @@ nav .option-header {
      width: 100%;
      padding: 8em 1em 0 1em;
 }
+
+
+/* enlaces de productos */
 
 .option-products {
 
@@ -291,6 +309,8 @@ nav .option-header {
      padding: 1em;
 }
 
+/* imagen promocional 2 imagenes*/
+
 .promocion2 .img-promo {
 
      display: flex;
@@ -309,6 +329,8 @@ nav .option-header {
      
 
 }
+
+/* lista de articulos */
 
 .products-deco {
 
@@ -342,7 +364,7 @@ nav .option-header {
 .opcion-products-article {
 
      flex: 0 0 auto;
-     width: 180px;
+     width: 193px;
      height: 100%;
      padding: .4em;
      font-size: 13px ;
@@ -350,7 +372,6 @@ nav .option-header {
     
      
 }
-
 
 
 .opcion-products-article:hover {
@@ -365,7 +386,7 @@ nav .option-header {
      display: flex;
      flex-wrap: nowrap;
      overflow-x: hidden;
-     margin: 1em 4em;
+     margin: 1em 2em;
      justify-content:start;
    
     
@@ -377,9 +398,6 @@ nav .option-header {
    overflow: auto;
 
 }
-
-
-
 
 
 .opcion-products-article .descripcion::after {
@@ -456,6 +474,8 @@ nav .option-header {
      display: none;
 }
 
+/* carta de presentacion */
+
 .texto {
 
      background-color: var(--gris-texto);
@@ -463,8 +483,6 @@ nav .option-header {
      font-size: 14px;
      padding: 2em 4em 2em 1.5em;
      text-align: start;
-     
-
 
 }
 
@@ -488,6 +506,8 @@ nav .option-header {
      padding: 1em;
      font-size: 15px;
 }
+
+/* busquedas frecuentes */
 
 .mas-frecuentes {
 
@@ -533,6 +553,8 @@ nav .option-header {
      color: var(--blanco);
 }
 
+/* texto descriptivo */
+
 .carta {
 
      padding: 60px 120px;
@@ -548,6 +570,9 @@ nav .option-header {
 
      font-size: 20px;
 }
+
+
+/* footer superior */
 
 
 .footer {
@@ -578,11 +603,17 @@ nav .option-header {
      padding: 1em 0;
 }
 
+/* susceripcion footer inferior */
+
 .suscripcion {
 
      color: var(--blanco);
      text-align: center;
-     padding: 2em 2em;
+     padding: 2em ;
+     display: flex;
+     flex-direction: column;
+    
+     justify-content: center;
 }
 .suscripcion h2 {
 
@@ -590,21 +621,14 @@ nav .option-header {
    
 }
 
-.suscripcion label input {
-         
-     margin-right: 5px;
-     
-   
-     
-}
 
 .suscribete {
 
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1em;  
   width: 100%;
+  margin: 1em 0;
    
 }
 
@@ -640,6 +664,8 @@ nav .option-header {
 
      padding-top: 20px;
 }
+
+/* enlaces footer  */
 
 
 .info {
@@ -700,6 +726,8 @@ nav .option-header {
      margin-right: 5px;
 }
 
+/* redes sociales */
+
 
 .rrss {
 
@@ -725,21 +753,10 @@ nav .option-header {
      color: var(--blanco);
 }
 
+/*  pie de footer */
 
-
-
-.making {
-
-     color: var(--blanco);
-     text-align: center;
-     padding: 3em 0 2em 0;
-     font-size: 13px;
-}
 
 .metodos-pago .bizum{
-
-     width: 96px;
-     height: 58px;
     
      border-radius: 5px;
      background-color: var(--blanco);
@@ -750,6 +767,26 @@ nav .option-header {
      justify-content: center;
      margin-top: 5em;
 
+}
+
+.metodos-pago li {
+
+     width: 96px;
+     height: 60px;
+}
+
+.metodos-pago img , .metodos-pago .bizum {
+
+     width: 100%;
+     height: 100%;
+}
+
+.making {
+
+     color: var(--blanco);
+     text-align: center;
+     padding: 3em 0 2em 0;
+     font-size: 13px;
 }
 .making span {
 
@@ -789,6 +826,20 @@ nav .option-header {
      
           }
 
+    .carta {
+
+     padding: 60px 20px;
+
+     
+}
+     .texto {
+
+    
+     margin: 0 20px ;
+  
+}
+ 
+
 
 }
 
@@ -817,6 +868,21 @@ nav .option-header {
                 display: none;
            }
 
+              .opcion-products-article {
+
+    
+         width: 190px;
+
+    }
+
+
+    .articles {
+
+       
+         margin: 1em 2em;
+
+    }
+
         
 
 }
@@ -835,6 +901,28 @@ nav .option-header {
      font-size: 1.5em;
      
 }
+     .suscribete button {
+
+    
+     padding: 10px 5px;
+}
+
+
+    .opcion-products-article {
+
+    
+         width: 170px;
+
+    }
+
+
+    .articles {
+
+       
+         margin: 1em 1em;
+
+    }
+
 }
 
 
@@ -860,8 +948,7 @@ nav .option-header {
           justify-content: center;
      }
 
-     /* intentar mejorar esta parte */
-
+     
           .opcion-products-titulo {
      
             
@@ -920,6 +1007,8 @@ nav .option-header {
      grid-column: 1fr 1fr;
      grid-template-areas: 
      "making metodos-pago";
+     gap: 1em;
+     
      
 
 }
@@ -929,7 +1018,8 @@ nav .option-header {
 
 
      grid-area: metodos-pago;
-     padding-bottom: 3em;
+     padding-bottom: 4em;
+     
   
 }
 
@@ -937,9 +1027,20 @@ nav .option-header {
 .making {
 
      grid-area: making;
-     margin-right: 10em;
+   
 }
 
+.metodos-pago li {
+
+     width: 48px;
+     height: 28px;
+}
+.metodos-pago img,
+.metodos-pago .bizum {
+
+     width: 100%;
+     height: 100%;
+}
 
 
 }
